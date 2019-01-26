@@ -1,0 +1,22 @@
+{
+    "fanova_cut_at_default": false,
+    "fanova_pairwise": true,
+    "forwardsel_cv": false,
+    "forwardsel_feat_imp": false,
+    "history": "/home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-4500/11/new-fanova-marginalize/runhistory.json",
+    "impute": false,
+    "incn_quant_var": true,
+    "marg_inst": true,
+    "max_sample_size": -1,
+    "modus": [
+        "fanova"
+    ],
+    "num_params": -1,
+    "out_folder": null,
+    "scenario_file": "/home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-4500/11/new-fanova-marginalize/scenario.txt",
+    "seed": 12345,
+    "table": false,
+    "trajectory": null,
+    "verbose_level": 20,
+    "wdir": "."
+}

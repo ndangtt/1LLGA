@@ -1,0 +1,78 @@
+INFO:Importance:Reading Scenario file and files specified in the scenario
+INFO:smac.scenario.scenario.Scenario:Reading scenario file: /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/scenario.txt
+INFO:smac.scenario.scenario.Scenario:Output to smac3-output_2018-12-14_15:08:20_458258
+INFO:Importance:Reading Runhistory
+INFO:Importance:#RunHistories found: 1
+INFO:Importance:Combined number of Runhistory data points: 4255
+INFO:Importance:Number of Configurations: 2559
+INFO:Importance:Converting Data and constructing Model
+INFO:Importance:Using model <pimp.epm.unlogged_epar_x_rfwi.UnloggedEPARXrfi object at 0x7f856c6f5c18>
+INFO:Importance:Size of training X: (1974, 5)
+INFO:Importance:Size of training y: (1974, 1)
+INFO:Importance:Data was not imputed
+INFO:Importance:Thus the size of X might be smaller than the datapoints in the RunHistory
+INFO:Importance:Fitting Model
+INFO:Importance:PREPROCESSING PREPROCESSING PREPROCESSING PREPROCESSING PREPROCESSING PREPROCESSING
+INFO:Importance:Marginalizing away all instances!
+Completed:   0%|          | 0/2559 [00:00<?, ?it/s]Completed:  11%|#1        | 283/2559 [00:00<00:00, 2819.15it/s]Completed:  19%|#9        | 491/2559 [00:00<00:00, 2445.64it/s]Completed:  29%|##9       | 746/2559 [00:00<00:00, 2478.71it/s]Completed:  39%|###9      | 999/2559 [00:00<00:00, 2490.91it/s]Completed:  47%|####7     | 1213/2559 [00:00<00:00, 2419.92it/s]Completed:  57%|#####6    | 1448/2559 [00:00<00:00, 2408.04it/s]Completed:  66%|######5   | 1685/2559 [00:00<00:00, 2401.98it/s]Completed:  74%|#######4  | 1902/2559 [00:00<00:00, 2330.95it/s]Completed:  83%|########3 | 2126/2559 [00:00<00:00, 2320.68it/s]Completed:  92%|#########1| 2345/2559 [00:01<00:00, 2307.46it/s]Completed: 100%|##########| 2559/2559 [00:01<00:00, 2296.68it/s]
+INFO:Importance:Size of training X after preprocessing: (2559, 4)
+INFO:Importance:Size of training y after preprocessing: (2559, 1)
+INFO:Importance:Finished Preprocessing
+INFO:Importance:Reading traj_file: /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/traj_aclib2.json
+INFO:Importance:Incumbent Configuration:
+  LL_static_crossOverBias, Value: 0.0109
+  LL_static_lambda1, Value: 5
+  LL_static_lambda2, Value: 66
+  LL_static_lda, Value: 7
+
+INFO:Importance:Best incumbent found in /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize
+INFO:Importance:Running fanova
+INFO:Importance:Setting up Evaluation Method
+INFO:Importance:Using model <pimp.epm.unlogged_rfwi.Unloggedrfwi object at 0x7f856a408278>
+INFO:Importance:X shape (2559, 4)
+INFO:fANOVA:No preprocessing necessary
+INFO:fANOVA:03 LL_static_lda                 : 0.4553
+INFO:fANOVA:00 LL_static_crossOverBias       : 0.3660
+INFO:fANOVA:01 LL_static_lambda1             : 0.0228
+INFO:fANOVA:02 LL_static_lambda2             : 0.0031
+INFO:fANOVA:Computing most important pairwise marginals using at most the 4 most important ones.
+INFO:fANOVA:-1 LL_static_lda <> LL_st...rBias: 0.0636
+INFO:fANOVA:-1 LL_static_lda <> LL_st...mbda1: 0.0271
+INFO:fANOVA:-1 LL_static_lda <> LL_st...mbda2: 0.0041
+INFO:fANOVA:-1 LL_st...rBias <> LL_st...mbda1: 0.0272
+INFO:fANOVA:-1 LL_st...rBias <> LL_st...mbda2: 0.0032
+INFO:fANOVA:-1 LL_st...mbda1 <> LL_st...mbda2: 0.0023
+INFO:fANOVA:Getting Marginals!
+  0%|          | 0/4 [00:00<?, ?it/s]Creating fANOVA plot: LL_static_lda_log.png:   0%|          | 0/4 [00:02<?, ?it/s]Creating fANOVA plot: LL_static_lda_log.png:  25%|##5       | 1/4 [00:02<00:06,  2.11s/it]Creating fANOVA plot: LL_static_crossOverBias_log.pn:  25%|##5       | 1/4 [00:03<00:11,  3.78s/it]Creating fANOVA plot: LL_static_crossOverBias_log.pn:  50%|#####     | 2/4 [00:03<00:03,  1.89s/it]Creating fANOVA plot: LL_static_lambda1_log.png:  50%|#####     | 2/4 [00:05<00:05,  2.87s/it]     Creating fANOVA plot: LL_static_lambda1_log.png:  75%|#######5  | 3/4 [00:05<00:01,  1.91s/it]Creating fANOVA plot: LL_static_lambda2_log.png:  75%|#######5  | 3/4 [00:08<00:02,  2.86s/it]Creating fANOVA plot: LL_static_lambda2_log.png: 100%|##########| 4/4 [00:08<00:00,  2.15s/it]
+INFO:fANOVA:Plotting Pairwise-Marginals!
+/home/nttd/Dropbox/softwares/miniconda3/lib/python3.6/site-packages/matplotlib/pyplot.py:524: RuntimeWarning: More than 5 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  max_open_warning, RuntimeWarning)
+                                                 | fANOVA
+---------------------------------------------------------
+                                   LL_static_lda |  45.528
+                         LL_static_crossOverBias |  36.604
+                               LL_static_lambda1 |  2.280
+                               LL_static_lambda2 |  0.306
+    ['LL_static_lda', 'LL_static_crossOverBias'] |  6.356
+          ['LL_static_lda', 'LL_static_lambda1'] |  2.711
+          ['LL_static_lda', 'LL_static_lambda2'] |  0.410
+['LL_static_crossOverBias', 'LL_static_lambda1'] |  2.717
+['LL_static_crossOverBias', 'LL_static_lambda2'] |  0.319
+      ['LL_static_lambda1', 'LL_static_lambda2'] |  0.227
+
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_static_lda_LL_static_crossOverBias.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_static_crossOverBias_LL_static_lambda1.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_static_lda_LL_static_lambda1.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_static_lda_LL_static_lambda2.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_static_crossOverBias_LL_static_lambda2.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_static_lambda1_LL_static_lambda2.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_static-param01/LL_static-param01-3000/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+Parameter Importance values, obtained using the PIMP package. Ablation values are percentages of improvement a single parameter change obtained between the default and an incumbent configuration.
+fANOVA values are percentages that show how much variance across the whole ConfigSpace can be explained by that parameter.
+Forward Selection values are RMSE values obtained using only a subset of parameters for prediction.
+fANOVA and Forward Selection try to estimate the importances across the whole parameter space, while ablation tries to estimate them between two given configurations.

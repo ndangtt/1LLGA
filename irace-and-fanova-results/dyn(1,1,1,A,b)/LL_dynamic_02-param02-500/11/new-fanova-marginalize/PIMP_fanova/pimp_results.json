@@ -1,0 +1,38 @@
+{
+    "fanova": {
+        "imp": {
+            "LL_dynamic_02_a": 0.019100425018982587,
+            "LL_dynamic_02_alpha": 0.36374387982663187,
+            "LL_dynamic_02_b": 0.006738007905714846,
+            "LL_dynamic_02_beta": 0.0061009925852875966,
+            "LL_dynamic_02_gamma": 0.4840981345924203,
+            "['LL_dynamic_02_a', 'LL_dynamic_02_b']": 0.005411870766499357,
+            "['LL_dynamic_02_a', 'LL_dynamic_02_beta']": 0.003290356688147607,
+            "['LL_dynamic_02_alpha', 'LL_dynamic_02_a']": 0.010468459076310997,
+            "['LL_dynamic_02_alpha', 'LL_dynamic_02_b']": 0.0029111511662227147,
+            "['LL_dynamic_02_alpha', 'LL_dynamic_02_beta']": 0.0027927875876126032,
+            "['LL_dynamic_02_b', 'LL_dynamic_02_beta']": 0.00019090657226904806,
+            "['LL_dynamic_02_gamma', 'LL_dynamic_02_a']": 0.013266926077231001,
+            "['LL_dynamic_02_gamma', 'LL_dynamic_02_alpha']": 0.03941982332413051,
+            "['LL_dynamic_02_gamma', 'LL_dynamic_02_b']": 0.006003416588573163,
+            "['LL_dynamic_02_gamma', 'LL_dynamic_02_beta']": 0.01155080186550838
+        },
+        "order": [
+            "LL_dynamic_02_gamma",
+            "LL_dynamic_02_alpha",
+            "LL_dynamic_02_a",
+            "LL_dynamic_02_b",
+            "LL_dynamic_02_beta",
+            "['LL_dynamic_02_gamma', 'LL_dynamic_02_alpha']",
+            "['LL_dynamic_02_gamma', 'LL_dynamic_02_a']",
+            "['LL_dynamic_02_gamma', 'LL_dynamic_02_b']",
+            "['LL_dynamic_02_gamma', 'LL_dynamic_02_beta']",
+            "['LL_dynamic_02_alpha', 'LL_dynamic_02_a']",
+            "['LL_dynamic_02_alpha', 'LL_dynamic_02_b']",
+            "['LL_dynamic_02_alpha', 'LL_dynamic_02_beta']",
+            "['LL_dynamic_02_a', 'LL_dynamic_02_b']",
+            "['LL_dynamic_02_a', 'LL_dynamic_02_beta']",
+            "['LL_dynamic_02_b', 'LL_dynamic_02_beta']"
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+LL_dynamic_02_alpha [0.33,10] [1]
+LL_dynamic_02_beta [1,10] [1]
+LL_dynamic_02_gamma [0.33,10] [1]
+LL_dynamic_02_a [1.01,2.5] [1.1]
+LL_dynamic_02_b [0.4,0.99] [0.7]
+
+
+#Conditions:

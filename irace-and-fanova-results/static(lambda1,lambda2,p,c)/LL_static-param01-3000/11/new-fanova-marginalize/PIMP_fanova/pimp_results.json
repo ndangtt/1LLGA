@@ -1,0 +1,28 @@
+{
+    "fanova": {
+        "imp": {
+            "LL_static_crossOverBias": 0.3660410176960823,
+            "LL_static_lambda1": 0.022803246234097654,
+            "LL_static_lambda2": 0.0030588333554960067,
+            "LL_static_lda": 0.45527810431204274,
+            "['LL_static_crossOverBias', 'LL_static_lambda1']": 0.027168129876046904,
+            "['LL_static_crossOverBias', 'LL_static_lambda2']": 0.0031862404996743647,
+            "['LL_static_lambda1', 'LL_static_lambda2']": 0.00226720344905495,
+            "['LL_static_lda', 'LL_static_crossOverBias']": 0.06355578471176891,
+            "['LL_static_lda', 'LL_static_lambda1']": 0.027112109435234264,
+            "['LL_static_lda', 'LL_static_lambda2']": 0.004096486627077478
+        },
+        "order": [
+            "LL_static_lda",
+            "LL_static_crossOverBias",
+            "LL_static_lambda1",
+            "LL_static_lambda2",
+            "['LL_static_lda', 'LL_static_crossOverBias']",
+            "['LL_static_lda', 'LL_static_lambda1']",
+            "['LL_static_lda', 'LL_static_lambda2']",
+            "['LL_static_crossOverBias', 'LL_static_lambda1']",
+            "['LL_static_crossOverBias', 'LL_static_lambda2']",
+            "['LL_static_lambda1', 'LL_static_lambda2']"
+        ]
+    }
+}

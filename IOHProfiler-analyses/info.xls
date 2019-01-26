@@ -1,0 +1,5 @@
+confId	confStr	confDescription
+1	"--algorithm ""['LL_dynamic_02']"" --LL_dynamic_02_alpha 1.0 --LL_dynamic_02_beta 1.0 --LL_dynamic_02_gamma 1.0 --LL_dynamic_02_a 1.10668 --LL_dynamic_02_b 0.666667 --crossover_choice 1"	alpha=beta=gamma=1 & A=(3/2)^{1/4} & b=2/3
+2	"--algorithm ""['LL_dynamic_02']"" --LL_dynamic_02_alpha 0.5 --LL_dynamic_02_beta 2.0 --LL_dynamic_02_gamma 0.5 --LL_dynamic_02_a 1.10668 --LL_dynamic_02_b 0.666667 --crossover_choice 1"	alpha=0.5 & beta=2 & gamma=0.5 & a=(3/2)^{1/4} & b=2/3
+3	"--algorithm ""['LL_static']"" --LL_static_lambda1 5 --LL_static_lambda2 25 --LL_static_lda 9 --LL_static_crossOverBias 0.0261 --crossover_choice 1"	lambda1=5 &  lambda2=25 & k=9 & c=0.0261
+4	"--algorithm ""['LL_dynamic_02']"" --LL_dynamic_02_alpha 0.45 --LL_dynamic_02_beta 1.6 --LL_dynamic_02_gamma 1 --LL_dynamic_02_a 1.16 --LL_dynamic_02_b 0.7 --crossover_choice 1"	alpha=0.45 & beta=1.6 & gamma=1 & A=1.16 & b=0.7

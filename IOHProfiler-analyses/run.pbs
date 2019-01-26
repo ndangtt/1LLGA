@@ -1,0 +1,33 @@
+#!/bin/bash --login
+
+# PBS job options (name, compute nodes, job time)
+#PBS -m abe
+#PBS -M ndangtt@gmail.com
+#PBS -l select=1:ncpus=36
+#PBS -l walltime=4:00:00
+#PBS -l place=scatter:excl
+
+# Replace [budget code] below with your project code (e.g. t01)
+#PBS -A dc014
+
+HOMEDIR='/lustre/home/dc014/nttd/'
+
+# Change to the directory that the job was submitted from
+cd /lustre/home/dc014/nttd/lip6/ioh
+
+# Load any required modules
+module load gcc
+module load R
+
+export PATH=${HOMEDIR}/softwares/miniconda3/bin:$PATH # miniconda
+export R_LIBS=${HOMEDIR}/R/x86_64-pc-linux-gnu-library/3.3/:$R_LIBS # R packages (on Cirrus)
+
+source activate lip6-python2
+
+commandLineFile=
+nCores=35
+
+# run commands
+python ${HOMEDIR}/tools/run-multiple-cmds.py ${commandLineFile} ${nCores}
+
+

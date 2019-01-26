@@ -1,0 +1,10 @@
+algo=algo.sh
+execDir=./
+deterministic=false
+run_obj=runtime
+cutoff_time=300000
+overall_obj=mean
+tunerTimeout=999999
+paramfile=param-file.txt
+instance_file=instances.txt
+feature_file=features.txt

@@ -1,0 +1,97 @@
+INFO:Importance:Reading Scenario file and files specified in the scenario
+INFO:smac.scenario.scenario.Scenario:Reading scenario file: /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/scenario.txt
+INFO:smac.scenario.scenario.Scenario:Output to smac3-output_2018-12-14_16:53:02_750991
+INFO:Importance:Reading Runhistory
+INFO:Importance:#RunHistories found: 1
+INFO:Importance:Combined number of Runhistory data points: 4946
+INFO:Importance:Number of Configurations: 2095
+INFO:Importance:Converting Data and constructing Model
+INFO:Importance:Using model <pimp.epm.unlogged_epar_x_rfwi.UnloggedEPARXrfi object at 0x7fc5ebd05470>
+INFO:Importance:Size of training X: (3315, 6)
+INFO:Importance:Size of training y: (3315, 1)
+INFO:Importance:Data was not imputed
+INFO:Importance:Thus the size of X might be smaller than the datapoints in the RunHistory
+INFO:Importance:Fitting Model
+INFO:Importance:PREPROCESSING PREPROCESSING PREPROCESSING PREPROCESSING PREPROCESSING PREPROCESSING
+INFO:Importance:Marginalizing away all instances!
+Completed:   0%|          | 0/2095 [00:00<?, ?it/s]Completed:  13%|#3        | 275/2095 [00:00<00:00, 2749.52it/s]Completed:  26%|##6       | 554/2095 [00:00<00:00, 2768.05it/s]Completed:  39%|###9      | 822/2095 [00:00<00:00, 2737.77it/s]Completed:  52%|#####2    | 1091/2095 [00:00<00:00, 2723.56it/s]Completed:  65%|######5   | 1363/2095 [00:00<00:00, 2721.27it/s]Completed:  78%|#######8  | 1640/2095 [00:00<00:00, 2728.30it/s]Completed:  92%|#########1| 1918/2095 [00:00<00:00, 2734.54it/s]Completed: 100%|##########| 2095/2095 [00:00<00:00, 2737.87it/s]
+INFO:Importance:Size of training X after preprocessing: (2095, 5)
+INFO:Importance:Size of training y after preprocessing: (2095, 1)
+INFO:Importance:Finished Preprocessing
+INFO:Importance:Reading traj_file: /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/traj_aclib2.json
+INFO:Importance:Incumbent Configuration:
+  LL_dynamic_02_a, Value: 1.1597
+  LL_dynamic_02_alpha, Value: 0.4411
+  LL_dynamic_02_b, Value: 0.7022
+  LL_dynamic_02_beta, Value: 1.6856
+  LL_dynamic_02_gamma, Value: 0.8424
+
+INFO:Importance:Best incumbent found in /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize
+INFO:Importance:Running fanova
+INFO:Importance:Setting up Evaluation Method
+INFO:Importance:Using model <pimp.epm.unlogged_rfwi.Unloggedrfwi object at 0x7fc5ebd0d080>
+INFO:Importance:X shape (2095, 5)
+INFO:fANOVA:No preprocessing necessary
+INFO:fANOVA:04 LL_dynamic_02_gamma           : 0.4225
+INFO:fANOVA:01 LL_dynamic_02_alpha           : 0.4060
+INFO:fANOVA:03 LL_dynamic_02_beta            : 0.0193
+INFO:fANOVA:02 LL_dynamic_02_b               : 0.0081
+INFO:fANOVA:00 LL_dynamic_02_a               : 0.0080
+INFO:fANOVA:Computing most important pairwise marginals using at most the 5 most important ones.
+INFO:fANOVA:-1 LL_dy...gamma <> LL_dy...alpha: 0.0579
+INFO:fANOVA:-1 LL_dy...gamma <> LL_dy..._beta: 0.0206
+INFO:fANOVA:-1 LL_dy...gamma <> LL_dy..._02_b: 0.0030
+INFO:fANOVA:-1 LL_dy...gamma <> LL_dy..._02_a: 0.0043
+INFO:fANOVA:-1 LL_dy...alpha <> LL_dy..._beta: 0.0045
+INFO:fANOVA:-1 LL_dy...alpha <> LL_dy..._02_b: 0.0038
+INFO:fANOVA:-1 LL_dy...alpha <> LL_dy..._02_a: 0.0139
+INFO:fANOVA:-1 LL_dy..._beta <> LL_dy..._02_b: 0.0049
+INFO:fANOVA:-1 LL_dy..._beta <> LL_dy..._02_a: 0.0020
+INFO:fANOVA:-1 LL_dy..._02_b <> LL_dy..._02_a: 0.0006
+INFO:fANOVA:Getting Marginals!
+  0%|          | 0/5 [00:00<?, ?it/s]Creating fANOVA plot: LL_dynamic_02_gamma_log.png:   0%|          | 0/5 [00:01<?, ?it/s]Creating fANOVA plot: LL_dynamic_02_gamma_log.png:  20%|##        | 1/5 [00:01<00:06,  1.57s/it]Creating fANOVA plot: LL_dynamic_02_alpha_log.png:  20%|##        | 1/5 [00:02<00:11,  2.92s/it]Creating fANOVA plot: LL_dynamic_02_alpha_log.png:  40%|####      | 2/5 [00:02<00:04,  1.46s/it]Creating fANOVA plot: LL_dynamic_02_beta_log.png:  40%|####      | 2/5 [00:04<00:06,  2.24s/it] Creating fANOVA plot: LL_dynamic_02_beta_log.png:  60%|######    | 3/5 [00:04<00:02,  1.50s/it]Creating fANOVA plot: LL_dynamic_02_b_log.png:  60%|######    | 3/5 [00:06<00:04,  2.09s/it]   Creating fANOVA plot: LL_dynamic_02_b_log.png:  80%|########  | 4/5 [00:06<00:01,  1.57s/it]Creating fANOVA plot: LL_dynamic_02_a_log.png:  80%|########  | 4/5 [00:07<00:01,  2.00s/it]Creating fANOVA plot: LL_dynamic_02_a_log.png: 100%|##########| 5/5 [00:07<00:00,  1.60s/it]
+INFO:fANOVA:Plotting Pairwise-Marginals!
+/home/nttd/Dropbox/softwares/miniconda3/lib/python3.6/site-packages/matplotlib/pyplot.py:524: RuntimeWarning: More than 5 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  max_open_warning, RuntimeWarning)
+                                               | fANOVA
+-------------------------------------------------------
+                           LL_dynamic_02_gamma |  42.247
+                           LL_dynamic_02_alpha |  40.597
+                            LL_dynamic_02_beta |  1.929
+                               LL_dynamic_02_b |  0.813
+                               LL_dynamic_02_a |  0.801
+['LL_dynamic_02_gamma', 'LL_dynamic_02_alpha'] |  5.793
+ ['LL_dynamic_02_gamma', 'LL_dynamic_02_beta'] |  2.059
+    ['LL_dynamic_02_gamma', 'LL_dynamic_02_b'] |  0.299
+    ['LL_dynamic_02_gamma', 'LL_dynamic_02_a'] |  0.425
+ ['LL_dynamic_02_alpha', 'LL_dynamic_02_beta'] |  0.449
+    ['LL_dynamic_02_alpha', 'LL_dynamic_02_b'] |  0.379
+    ['LL_dynamic_02_alpha', 'LL_dynamic_02_a'] |  1.386
+     ['LL_dynamic_02_beta', 'LL_dynamic_02_b'] |  0.490
+     ['LL_dynamic_02_beta', 'LL_dynamic_02_a'] |  0.202
+        ['LL_dynamic_02_b', 'LL_dynamic_02_a'] |  0.057
+
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_gamma_LL_dynamic_02_alpha.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_gamma_LL_dynamic_02_beta.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_alpha_LL_dynamic_02_a.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_beta_LL_dynamic_02_b.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_alpha_LL_dynamic_02_beta.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_gamma_LL_dynamic_02_a.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_alpha_LL_dynamic_02_b.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_gamma_LL_dynamic_02_b.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_beta_LL_dynamic_02_a.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_02_b_LL_dynamic_02_a.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_02-param02/LL_dynamic_02-param02-3500/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+Parameter Importance values, obtained using the PIMP package. Ablation values are percentages of improvement a single parameter change obtained between the default and an incumbent configuration.
+fANOVA values are percentages that show how much variance across the whole ConfigSpace can be explained by that parameter.
+Forward Selection values are RMSE values obtained using only a subset of parameters for prediction.
+fANOVA and Forward Selection try to estimate the importances across the whole parameter space, while ablation tries to estimate them between two given configurations.

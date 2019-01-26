@@ -1,0 +1,7 @@
+This folder contains IOH-profiler results for some selected configurations. Data for the IOH-profiler is listed as follows:
+
+- info.xls: selected configurations and their ids
+
+- ioh-data: IOH data for each combination of configuration id and problem size
+  + example: ioh/ioh-data/1-1000.zip contains IOH data for configuration 1 and n=1000. The runs.dat file contains results for every iteration of the algorithm
+  + for seeing which algorithm parameters correspond to which parameters shown in *.dat files (e.g., mutation_rate, n_offsprings), please see file source-code/algorithms/algorithms.py, lines with comment "# IOH output"

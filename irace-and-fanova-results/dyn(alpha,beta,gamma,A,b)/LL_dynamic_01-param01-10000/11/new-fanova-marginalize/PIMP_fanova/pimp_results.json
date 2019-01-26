@@ -1,0 +1,14 @@
+{
+    "fanova": {
+        "imp": {
+            "LL_dynamic_01_a": 0.7499412440851282,
+            "LL_dynamic_01_b": 0.11905276425968166,
+            "['LL_dynamic_01_a', 'LL_dynamic_01_b']": 0.13100599165519042
+        },
+        "order": [
+            "LL_dynamic_01_a",
+            "LL_dynamic_01_b",
+            "['LL_dynamic_01_a', 'LL_dynamic_01_b']"
+        ]
+    }
+}

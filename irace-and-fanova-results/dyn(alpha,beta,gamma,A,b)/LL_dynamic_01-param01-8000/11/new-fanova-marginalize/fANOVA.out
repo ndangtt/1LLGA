@@ -1,0 +1,50 @@
+INFO:Importance:Reading Scenario file and files specified in the scenario
+INFO:smac.scenario.scenario.Scenario:Reading scenario file: /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_01-param01/LL_dynamic_01-param01-8000/11/new-fanova-marginalize/scenario.txt
+INFO:smac.scenario.scenario.Scenario:Output to smac3-output_2018-12-14_15:58:44_063470
+INFO:Importance:Reading Runhistory
+INFO:Importance:#RunHistories found: 1
+INFO:Importance:Combined number of Runhistory data points: 4897
+INFO:Importance:Number of Configurations: 2565
+INFO:Importance:Converting Data and constructing Model
+INFO:Importance:Using model <pimp.epm.unlogged_epar_x_rfwi.UnloggedEPARXrfi object at 0x7ff269cc3f28>
+INFO:Importance:Size of training X: (2758, 3)
+INFO:Importance:Size of training y: (2758, 1)
+INFO:Importance:Data was not imputed
+INFO:Importance:Thus the size of X might be smaller than the datapoints in the RunHistory
+INFO:Importance:Fitting Model
+INFO:Importance:PREPROCESSING PREPROCESSING PREPROCESSING PREPROCESSING PREPROCESSING PREPROCESSING
+INFO:Importance:Marginalizing away all instances!
+Completed:   0%|          | 0/2565 [00:00<?, ?it/s]Completed:  14%|#4        | 363/2565 [00:00<00:00, 3628.20it/s]Completed:  28%|##8       | 719/2565 [00:00<00:00, 3591.62it/s]Completed:  41%|####1     | 1063/2565 [00:00<00:00, 3539.37it/s]Completed:  55%|#####4    | 1406/2565 [00:00<00:00, 3511.37it/s]Completed:  69%|######8   | 1769/2565 [00:00<00:00, 3533.29it/s]Completed:  80%|########  | 2063/2565 [00:00<00:00, 3393.33it/s]Completed:  94%|#########3| 2403/2565 [00:00<00:00, 3392.97it/s]Completed: 100%|##########| 2565/2565 [00:00<00:00, 3388.49it/s]
+INFO:Importance:Size of training X after preprocessing: (2565, 2)
+INFO:Importance:Size of training y after preprocessing: (2565, 1)
+INFO:Importance:Finished Preprocessing
+INFO:Importance:Reading traj_file: /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_01-param01/LL_dynamic_01-param01-8000/11/new-fanova-marginalize/traj_aclib2.json
+INFO:Importance:Incumbent Configuration:
+  LL_dynamic_01_a, Value: 1.0688
+  LL_dynamic_01_b, Value: 0.7623
+
+INFO:Importance:Best incumbent found in /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_01-param01/LL_dynamic_01-param01-8000/11/new-fanova-marginalize
+INFO:Importance:Running fanova
+INFO:Importance:Setting up Evaluation Method
+INFO:Importance:Using model <pimp.epm.unlogged_rfwi.Unloggedrfwi object at 0x7ff269b31ac8>
+INFO:Importance:X shape (2565, 2)
+INFO:fANOVA:No preprocessing necessary
+INFO:fANOVA:00 LL_dynamic_01_a               : 0.7293
+INFO:fANOVA:01 LL_dynamic_01_b               : 0.1473
+INFO:fANOVA:Computing most important pairwise marginals using at most the 2 most important ones.
+INFO:fANOVA:-1 LL_dy..._01_a <> LL_dy..._01_b: 0.1234
+INFO:fANOVA:Getting Marginals!
+  0%|          | 0/2 [00:00<?, ?it/s]Creating fANOVA plot: LL_dynamic_01_a_log.png:   0%|          | 0/2 [00:01<?, ?it/s]Creating fANOVA plot: LL_dynamic_01_a_log.png:  50%|#####     | 1/2 [00:01<00:01,  1.36s/it]Creating fANOVA plot: LL_dynamic_01_b_log.png:  50%|#####     | 1/2 [00:02<00:02,  2.66s/it]Creating fANOVA plot: LL_dynamic_01_b_log.png: 100%|##########| 2/2 [00:02<00:00,  1.33s/it]
+INFO:fANOVA:Plotting Pairwise-Marginals!
+                                       | fANOVA
+-----------------------------------------------
+                       LL_dynamic_01_a |  72.932
+                       LL_dynamic_01_b |  14.732
+['LL_dynamic_01_a', 'LL_dynamic_01_b'] |  12.336
+
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_01-param01/LL_dynamic_01-param01-8000/11/new-fanova-marginalize/PIMP_fanova/fanova/LL_dynamic_01_a_LL_dynamic_01_b.png
+creating /home/nttd/Dropbox/St-Andrews/carola/experiments/results-details/irace-rdata-files/LL_dynamic_01-param01/LL_dynamic_01-param01-8000/11/new-fanova-marginalize/PIMP_fanova/fanova/interactive_plots
+Parameter Importance values, obtained using the PIMP package. Ablation values are percentages of improvement a single parameter change obtained between the default and an incumbent configuration.
+fANOVA values are percentages that show how much variance across the whole ConfigSpace can be explained by that parameter.
+Forward Selection values are RMSE values obtained using only a subset of parameters for prediction.
+fANOVA and Forward Selection try to estimate the importances across the whole parameter space, while ablation tries to estimate them between two given configurations.

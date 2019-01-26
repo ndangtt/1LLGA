@@ -1,0 +1,3 @@
+{"description": "(1+1) GA static verion, lambda1=5, lambda2=40, k in [1..100] with 50 values, c in [0.01,0.5] with 50 values. 100 runs per configuration",
+"fixed": "LL_static_lambda1,5,LL_static_lambda2,40",
+"uniform": "LL_static_lda,int,1,100,50,LL_static_crossOverBias,numeric,0.01,0.5,50"}

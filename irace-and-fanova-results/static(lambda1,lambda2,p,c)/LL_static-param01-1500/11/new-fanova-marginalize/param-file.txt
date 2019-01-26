@@ -1,0 +1,7 @@
+LL_static_lambda1 [1,100] [60]i
+LL_static_lambda2 [1,100] [55]i
+LL_static_lda [1,100] [97]i
+LL_static_crossOverBias [0.01,0.5] [0.3468]
+
+
+#Conditions:
