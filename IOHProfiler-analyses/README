@@ -1,4 +1,7 @@
-This folder contains IOH-profiler results for some selected configurations. Data for the IOH-profiler is listed as follows:
+This folder contains IOH-profiler results for some selected configurations. These files can be analyzed with the [IOHProfiler post-processing tool](http://iohprofiler.liacs.nl/) or with the equivalent offline application  available on [IOHProfiler@GitHub](https://github.com/IOHprofiler)
+
+
+Data for the IOH-profiler is listed as follows:
 
 - info.xls: selected configurations and their ids
 
