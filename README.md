@@ -2,7 +2,7 @@ This repository contains all data and results for the paper ***Hyper-Parameter T
 
 Structure:
 
-* ```source-code```: source code of the (1 + (λ, λ)) GA algorithm used in the paper
+* ```source-code```: source code of the (1 + (λ, λ)) GA algorithm used in the paper. This code is based upon previous work of Eduardo Carvalho Pinto.
 
 * ```irace-and-fanova-results```: results obtained from
 	- tuning experiments using the [irace](http://iridia.ulb.ac.be/irace/) software 
