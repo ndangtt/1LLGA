@@ -1,6 +1,6 @@
 This repository contains all data and results for the paper 
+
 ***Nguyen Dang, Carola Doerr (2019) Hyper-Parameter Tuning for the (1 + (λ, λ)) GA, accepted at GECCO 2019*** 
-(an extended version with additional performance statistics is available on arxiv)
 
 Structure:
 
