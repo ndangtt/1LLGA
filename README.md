@@ -2,6 +2,8 @@ This repository contains all data and results for the paper
 
 ***Nguyen Dang, Carola Doerr (2019) Hyper-Parameter Tuning for the (1 + (λ, λ)) GA, accepted at GECCO 2019*** 
 
+([arxiv version](https://arxiv.org/abs/1904.04608))
+
 Structure:
 
 * ```source-code```: source code of the (1 + (λ, λ)) GA algorithm used in the paper. This code is based upon previous work of Eduardo Carvalho Pinto.
