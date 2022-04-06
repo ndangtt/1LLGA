@@ -96,11 +96,11 @@ def LL_static(initial_solution, instance, lda1, lda2, k, c, crossover_choice, ma
         if y.value > x.value:
             x = y
 	
-	if f is not None:
-	    ls = [T, x.value, x.value, x.value, x.value, p, c] # IOH output 
-	    s = ' '.join([str(val) for val in ls])
-	    f.write('\n'+s)
-        
+        if f is not None:
+            ls = [T, x.value, x.value, x.value, x.value, p, c] # IOH output 
+            s = ' '.join([str(val) for val in ls])
+            f.write('\n'+s)
+            
         function_value.append(x.value)
         neval.append(T)
         counter += 1
@@ -218,15 +218,15 @@ def LL_dynamic_01(initial_solution, instance, a, b, crossover_choice, max_evalua
             #x = y
             lda = min([lda * a,n-1])
 
-	if (y.value > x.value):
+        if (y.value > x.value):
             x = y
             lda = max([lda * b,1])
 
-	if f is not None:
-	    ls = [T, x.value, x.value, x.value, x.value, p, c, lda, counter] # IOH output
-	    s = ' '.join([str(val) for val in ls])
-	    f.write('\n'+s)
-                                
+        if f is not None:
+            ls = [T, x.value, x.value, x.value, x.value, p, c, lda, counter] # IOH output
+            s = ' '.join([str(val) for val in ls])
+            f.write('\n'+s)
+                                    
         #ldas.append(lda)
         function_value.append(x.value)
         neval.append(T)
@@ -298,11 +298,11 @@ def LL_dynamic_02(initial_solution, instance, alpha, beta, gamma, a, b, crossove
             x = y
             lda = max([lda * b,1])
 
-	if f is not None:
-	    ls = [T, x.value, x.value, x.value, x.value, p, c, lda1, lda2, counter] # IOH output
-	    s = ' '.join([str(val) for val in ls])
-	    f.write('\n'+s)
-                    
+        if f is not None:
+            ls = [T, x.value, x.value, x.value, x.value, p, c, lda1, lda2, counter] # IOH output
+            s = ' '.join([str(val) for val in ls])
+            f.write('\n'+s)
+                        
         ldas.append(lda)
         function_value.append(x.value)
         neval.append(T)
