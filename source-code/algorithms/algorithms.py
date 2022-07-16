@@ -74,9 +74,8 @@ def LL_static(initial_solution, instance, lda1, lda2, k, c, crossover_choice, ma
 
         #sample l from the binomial
         p = k/float(n)
-        l = np.random.binomial(n,p)
-        while l == 0:
-            l = np.random.binomial(n,p)
+        p_distribution = [0] + [stats.binom.pmf(k, n, p) / (1-(1-p)**n) for k in range(1, n+1)]
+        l = np.random.choice(range(n + 1), p=p_distribution)   
         
         x_prime = utils.mutation(x,l)
         x_prime.value = getattr(evaluate, instance.name)(x_prime,instance)
@@ -132,9 +131,8 @@ def LL_static_02(initial_solution, instance, lda, alpha, beta, crossover_choice,
 
         #sample l from the binomial
         p = alpha/float(n)
-        l = np.random.binomial(n,p)
-        while l == 0:
-            l = np.random.binomial(n,p)
+        p_distribution = [0] + [stats.binom.pmf(k, n, p) / (1-(1-p)**n) for k in range(1, n+1)]
+        l = np.random.choice(range(n + 1), p=p_distribution)   
         
         x_prime = utils.mutation(x,l)
         x_prime.value = getattr(evaluate, instance.name)(x_prime,instance)
@@ -194,9 +192,8 @@ def LL_dynamic_01(initial_solution, instance, a, b, crossover_choice, max_evalua
         #----------- mutation phase
 
         #print("Mutation phase: lda="+str(lda)+'; T='+str(T)) #DEBUG
-        l = np.random.binomial(n,p)
-        while l == 0:
-            l = np.random.binomial(n,p)
+        p_distribution = [0] + [stats.binom.pmf(k, n, p) / (1-(1-p)**n) for k in range(1, n+1)]
+        l = np.random.choice(range(n + 1), p=p_distribution)   
         
         x_prime = utils.mutation(x,l)
         x_prime.value = getattr(evaluate, instance.name)(x_prime,instance)
@@ -271,9 +268,8 @@ def LL_dynamic_02(initial_solution, instance, alpha, beta, gamma, a, b, crossove
         
         #----------- mutation phase
 
-        l = np.random.binomial(n,p)
-        while l == 0:
-            l = np.random.binomial(n,p)
+        p_distribution = [0] + [stats.binom.pmf(k, n, p) / (1-(1-p)**n) for k in range(1, n+1)]
+        l = np.random.choice(range(n + 1), p=p_distribution)   
         
         x_prime = utils.mutation(x,l)
         x_prime.value = getattr(evaluate, instance.name)(x_prime,instance)
